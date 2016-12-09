@@ -1,0 +1,18 @@
+<div ng-if="user && user.local">
+<h5>name : {{user.local.name}}</h5>
+<h5>id : {{user._id}}</h5>
+<h5>email :{{user.local.email}}</h5>
+<h5>password :{{user.local.password}}</h5>	
+</div>
+<div ng-if="user && user.facebook">
+<h5>name : {{user.facebook.name}}</h5>
+<h5>id : {{user._id}}</h5>
+<h5>email :{{user.facebook.email}}</h5>
+<h5>password :{{user.facebook.password}}</h5>	
+</div>
+
+
+<button class="btn" ng-click="destroySession()">Destry session</button>
+<button class="btn" ng-click="getInfo()">Get user </button>
+<button class="btn" ng-click="logout()">Log out</button>
+

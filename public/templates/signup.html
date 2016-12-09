@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+
+		<form ng-submit="signup()">
+		<fieldset>
+
+<!-- Form Name -->
+<legend><b>Create a new account</b></legend>
+<div class="form-group">
+    <label for="exampleInputText">name</label>
+    <input type="text" class="form-control" id="exampleInputText" placeholder="Name"  ng-model="user.name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required ng-model="user.email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required ng-model="user.password">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Sign up</button>
+  </fieldset>
+</form>
+<h1 ng-if="error">{{error}}</h1>
+
+	</div>
+</div>
